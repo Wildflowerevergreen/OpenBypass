@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Drawing;
+using System.Diagnostics;
 using FontAwesome.Sharp;
+using System.IO;
 using System.Windows.Forms;
 
 namespace OpenBypass
@@ -19,7 +21,33 @@ namespace OpenBypass
         }
         private void Main_Load(object sender, System.EventArgs e)
         {
-            MessageBox.Show("This app is 100% free & open source. If you want to contribute to this or join our Discord server, click the About button on the bottom left.");
+            MessageBox.Show("This app is 100% free & open source. If you want to contribute to this or join our Discord server, click the corresponding buttons on the bottom left.");
+            if (File.Exists(@"%USERPROFILE%\.ssh\known_hosts"))
+            {
+                File.Delete(@"%USERPROFILE%\.ssh\known_hosts");
+            }
+            foreach (var process in Process.GetProcessesByName("iproxy"))
+            {
+                process.Kill();
+            }
+            try
+            {
+                foreach (Process process in Process.GetProcesses())
+                {
+                    if (process.ProcessName == "iTunes")
+                    {
+                        process.Kill();
+                    }
+                    if (process.ProcessName == "iTunesHelper")
+                    {
+                        process.Kill();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex.Message);
+            }
         }
         private void OpenChildForm(Form childForm)
         {
@@ -93,15 +121,18 @@ namespace OpenBypass
 
         private void aboutButton_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(
-        "Click Yes to get access to our repository, or click No to get access to our Discord", "About" , MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk
-    ) == DialogResult.Yes)
-            {
-                System.Diagnostics.Process.Start("https://bit.ly/32tinEh");
-            }
-            else {
-                System.Diagnostics.Process.Start("https://discord.gg/cUa7WVmx7E");
-            }
+            System.Diagnostics.Process.Start("https://discord.gg/cUa7WVmx7E");
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://bit.ly/32tinEh");
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColor.color1);
+            OpenChildForm(new Activation());
         }
     }
 }

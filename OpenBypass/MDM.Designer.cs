@@ -30,6 +30,7 @@ namespace OpenBypass
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // button1
@@ -46,12 +47,21 @@ namespace OpenBypass
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // progressBar
+            // 
+            this.progressBar.BackColor = System.Drawing.Color.Sienna;
+            this.progressBar.Location = new System.Drawing.Point(193, 244);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(208, 23);
+            this.progressBar.TabIndex = 2;
+            // 
             // MDM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(609, 392);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.button1);
             this.Name = "MDM";
             this.Text = "MDM";
@@ -62,5 +72,6 @@ namespace OpenBypass
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }

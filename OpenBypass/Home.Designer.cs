@@ -30,76 +30,122 @@ namespace OpenBypass
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.openMDM = new FontAwesome.Sharp.IconButton();
+            this.openExtras = new FontAwesome.Sharp.IconButton();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.openGit = new FontAwesome.Sharp.IconButton();
+            this.openDiscord = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.aboutButton = new FontAwesome.Sharp.IconButton();
             this.mainPanel.SuspendLayout();
             this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
-            // iconButton1
+            // openMDM
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Tasks;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 38;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(12, 103);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton1.Size = new System.Drawing.Size(189, 47);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "MDM Bypass";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.openMDM.BackColor = System.Drawing.Color.Transparent;
+            this.openMDM.FlatAppearance.BorderSize = 0;
+            this.openMDM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.openMDM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openMDM.ForeColor = System.Drawing.Color.White;
+            this.openMDM.IconChar = FontAwesome.Sharp.IconChar.Tasks;
+            this.openMDM.IconColor = System.Drawing.Color.White;
+            this.openMDM.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.openMDM.IconSize = 38;
+            this.openMDM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openMDM.Location = new System.Drawing.Point(12, 97);
+            this.openMDM.Name = "openMDM";
+            this.openMDM.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.openMDM.Size = new System.Drawing.Size(189, 47);
+            this.openMDM.TabIndex = 0;
+            this.openMDM.Text = "MDM Bypass";
+            this.openMDM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openMDM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.openMDM.UseVisualStyleBackColor = false;
+            this.openMDM.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // iconButton4
+            // openExtras
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 38;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(12, 167);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton4.Size = new System.Drawing.Size(189, 47);
-            this.iconButton4.TabIndex = 4;
-            this.iconButton4.Text = "Extras";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = false;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            this.openExtras.BackColor = System.Drawing.Color.Transparent;
+            this.openExtras.FlatAppearance.BorderSize = 0;
+            this.openExtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.openExtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openExtras.ForeColor = System.Drawing.Color.White;
+            this.openExtras.IconChar = FontAwesome.Sharp.IconChar.Wrench;
+            this.openExtras.IconColor = System.Drawing.Color.White;
+            this.openExtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.openExtras.IconSize = 38;
+            this.openExtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openExtras.Location = new System.Drawing.Point(12, 163);
+            this.openExtras.Name = "openExtras";
+            this.openExtras.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.openExtras.Size = new System.Drawing.Size(189, 47);
+            this.openExtras.TabIndex = 4;
+            this.openExtras.Text = "Extras";
+            this.openExtras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openExtras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.openExtras.UseVisualStyleBackColor = false;
+            this.openExtras.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.mainPanel.Controls.Add(this.aboutButton);
+            this.mainPanel.Controls.Add(this.openGit);
+            this.mainPanel.Controls.Add(this.openDiscord);
             this.mainPanel.Controls.Add(this.label1);
-            this.mainPanel.Controls.Add(this.iconButton4);
-            this.mainPanel.Controls.Add(this.iconButton1);
+            this.mainPanel.Controls.Add(this.openExtras);
+            this.mainPanel.Controls.Add(this.openMDM);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(198, 450);
             this.mainPanel.TabIndex = 0;
+            // 
+            // openGit
+            // 
+            this.openGit.BackColor = System.Drawing.Color.Transparent;
+            this.openGit.FlatAppearance.BorderSize = 0;
+            this.openGit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.openGit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openGit.ForeColor = System.Drawing.Color.White;
+            this.openGit.IconChar = FontAwesome.Sharp.IconChar.Github;
+            this.openGit.IconColor = System.Drawing.Color.White;
+            this.openGit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.openGit.IconSize = 38;
+            this.openGit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openGit.Location = new System.Drawing.Point(88, 400);
+            this.openGit.Name = "openGit";
+            this.openGit.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.openGit.Size = new System.Drawing.Size(63, 47);
+            this.openGit.TabIndex = 6;
+            this.openGit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openGit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.openGit.UseVisualStyleBackColor = false;
+            this.openGit.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // openDiscord
+            // 
+            this.openDiscord.BackColor = System.Drawing.Color.Transparent;
+            this.openDiscord.FlatAppearance.BorderSize = 0;
+            this.openDiscord.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.openDiscord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openDiscord.ForeColor = System.Drawing.Color.White;
+            this.openDiscord.IconChar = FontAwesome.Sharp.IconChar.Discord;
+            this.openDiscord.IconColor = System.Drawing.Color.White;
+            this.openDiscord.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.openDiscord.IconSize = 38;
+            this.openDiscord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openDiscord.Location = new System.Drawing.Point(19, 400);
+            this.openDiscord.Name = "openDiscord";
+            this.openDiscord.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.openDiscord.Size = new System.Drawing.Size(63, 47);
+            this.openDiscord.TabIndex = 5;
+            this.openDiscord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openDiscord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.openDiscord.UseVisualStyleBackColor = false;
+            this.openDiscord.Click += new System.EventHandler(this.aboutButton_Click);
             // 
             // label1
             // 
@@ -143,29 +189,6 @@ namespace OpenBypass
             this.label3.TabIndex = 0;
             this.label3.Text = "Select an option to get started";
             // 
-            // aboutButton
-            // 
-            this.aboutButton.BackColor = System.Drawing.Color.Transparent;
-            this.aboutButton.FlatAppearance.BorderSize = 0;
-            this.aboutButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.aboutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aboutButton.ForeColor = System.Drawing.Color.White;
-            this.aboutButton.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
-            this.aboutButton.IconColor = System.Drawing.Color.White;
-            this.aboutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.aboutButton.IconSize = 38;
-            this.aboutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.aboutButton.Location = new System.Drawing.Point(9, 400);
-            this.aboutButton.Name = "aboutButton";
-            this.aboutButton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.aboutButton.Size = new System.Drawing.Size(189, 47);
-            this.aboutButton.TabIndex = 5;
-            this.aboutButton.Text = "About";
-            this.aboutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.aboutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.aboutButton.UseVisualStyleBackColor = false;
-            this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,14 +211,15 @@ namespace OpenBypass
 
         #endregion
 
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton openMDM;
+        private FontAwesome.Sharp.IconButton openExtras;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private FontAwesome.Sharp.IconButton aboutButton;
+        private FontAwesome.Sharp.IconButton openDiscord;
+        private FontAwesome.Sharp.IconButton openGit;
     }
 }
 
