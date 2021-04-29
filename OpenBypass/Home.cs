@@ -69,7 +69,7 @@ namespace OpenBypass
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColor.color1);
-            OpenChildForm(new susicivus());
+            OpenChildForm(new Passcode());
         }
 
 
@@ -133,6 +133,12 @@ namespace OpenBypass
         {
             ActivateButton(sender, RGBColor.color1);
             OpenChildForm(new Activation());
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColor.color1);
+            OpenChildForm(new susicivus());
         }
     }
 }

@@ -31,8 +31,9 @@ namespace OpenBypass
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.openMDM = new FontAwesome.Sharp.IconButton();
-            this.openExtras = new FontAwesome.Sharp.IconButton();
+            this.openPasscode = new FontAwesome.Sharp.IconButton();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.openGit = new FontAwesome.Sharp.IconButton();
             this.openDiscord = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,42 +67,66 @@ namespace OpenBypass
             this.openMDM.UseVisualStyleBackColor = false;
             this.openMDM.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // openExtras
+            // openPasscode
             // 
-            this.openExtras.BackColor = System.Drawing.Color.Transparent;
-            this.openExtras.FlatAppearance.BorderSize = 0;
-            this.openExtras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.openExtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openExtras.ForeColor = System.Drawing.Color.White;
-            this.openExtras.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.openExtras.IconColor = System.Drawing.Color.White;
-            this.openExtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.openExtras.IconSize = 38;
-            this.openExtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openExtras.Location = new System.Drawing.Point(12, 163);
-            this.openExtras.Name = "openExtras";
-            this.openExtras.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.openExtras.Size = new System.Drawing.Size(189, 47);
-            this.openExtras.TabIndex = 4;
-            this.openExtras.Text = "Extras";
-            this.openExtras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openExtras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.openExtras.UseVisualStyleBackColor = false;
-            this.openExtras.Click += new System.EventHandler(this.iconButton4_Click);
+            this.openPasscode.BackColor = System.Drawing.Color.Transparent;
+            this.openPasscode.FlatAppearance.BorderSize = 0;
+            this.openPasscode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.openPasscode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openPasscode.ForeColor = System.Drawing.Color.White;
+            this.openPasscode.IconChar = FontAwesome.Sharp.IconChar.Key;
+            this.openPasscode.IconColor = System.Drawing.Color.White;
+            this.openPasscode.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.openPasscode.IconSize = 38;
+            this.openPasscode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openPasscode.Location = new System.Drawing.Point(12, 150);
+            this.openPasscode.Name = "openPasscode";
+            this.openPasscode.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.openPasscode.Size = new System.Drawing.Size(189, 47);
+            this.openPasscode.TabIndex = 4;
+            this.openPasscode.Text = "Passcode";
+            this.openPasscode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openPasscode.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.openPasscode.UseVisualStyleBackColor = false;
+            this.openPasscode.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.mainPanel.Controls.Add(this.iconButton1);
             this.mainPanel.Controls.Add(this.openGit);
             this.mainPanel.Controls.Add(this.openDiscord);
             this.mainPanel.Controls.Add(this.label1);
-            this.mainPanel.Controls.Add(this.openExtras);
+            this.mainPanel.Controls.Add(this.openPasscode);
             this.mainPanel.Controls.Add(this.openMDM);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(198, 450);
             this.mainPanel.TabIndex = 0;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Wrench;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 38;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(12, 204);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton1.Size = new System.Drawing.Size(189, 47);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.Text = "Extras";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // openGit
             // 
@@ -212,7 +237,7 @@ namespace OpenBypass
         #endregion
 
         private FontAwesome.Sharp.IconButton openMDM;
-        private FontAwesome.Sharp.IconButton openExtras;
+        private FontAwesome.Sharp.IconButton openPasscode;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label label1;
@@ -220,6 +245,7 @@ namespace OpenBypass
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton openDiscord;
         private FontAwesome.Sharp.IconButton openGit;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
 

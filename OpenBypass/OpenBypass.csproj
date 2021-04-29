@@ -124,8 +124,13 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Passcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passcode.Designer.cs">
+      <DependentUpon>Passcode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\ActivationServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Activation.resx">
       <DependentUpon>Activation.cs</DependentUpon>
@@ -138,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passcode.resx">
+      <DependentUpon>Passcode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

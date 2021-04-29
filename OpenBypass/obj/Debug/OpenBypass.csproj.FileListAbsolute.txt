@@ -15,3 +15,4 @@ C:\Users\Michael\Desktop\Work\OpenBypass\OpenBypass\obj\Debug\OpenBypass.csproj.
 C:\Users\Michael\Desktop\Work\OpenBypass\OpenBypass\obj\Debug\OpenBypass.exe
 C:\Users\Michael\Desktop\Work\OpenBypass\OpenBypass\obj\Debug\OpenBypass.pdb
 C:\Users\Michael\Desktop\Work\OpenBypass\OpenBypass\obj\Debug\OpenBypass.Activation.resources
+C:\Users\Michael\Desktop\Work\OpenBypass\OpenBypass\obj\Debug\OpenBypass.Passcode.resources
